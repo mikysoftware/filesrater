@@ -1,0 +1,191 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>FilesRater: The clasificator app</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" type="text/css" href="style_home.css">
+<link rel="stylesheet" type="text/css" href="slider.css">
+</head>
+
+<body>
+<div id="mySidenav" class="sidenav"> <a href="javascript:void(0)"  class="closebtn" onclick="closeNav()">&times;</a> <a class="item-lateral" onclick="smoothScroll('#aboutid')" >About</a> <a class="item-lateral" onclick="smoothScroll('#appsid')">Apps</a> <a class="item-lateral" onclick="smoothScroll('#contactid')">Contact</a> </div>
+
+<!-- Use any element to open the sidenav --> 
+<!--<span onclick="openNav()" >open</span>--> 
+
+<!-- -----------------------------------------------------------  -->
+<div class	= "cabecera"> <img id="logo" onclick="openTab(event,'home')" src="banner4.png" width="1024" height="100" /> <img id="icon" src="icon_menu2.png" width="100" height="100" onclick="openNav()" /> </div>
+<div align="center" id="menunavigation" >
+  <nav class= "menus">
+    <ul class="list_menus" >
+      <li class="button-section" id="butinit" onclick="openTab(event,'home')">DOWNLOAD</li>
+      <li class="button-section" onclick="openTab(event,'features')">FEATURES</li>
+      <li class="button-section" onclick="openTab(event,'tutorials')">TUTORIAL</li>
+      <li class="button-section" onclick="openTab(event,'about')">ABOUT</li>
+      <li class="button-section" onclick="openTab(event,'contactid')">CONTACT</li>
+    </ul>
+  </nav>
+</div>
+<div class="tabs" id="home" >
+  <div class="tab_home">
+    <div class="left_section">
+      <p class="content_home"> FilesRater It is a great application to save your files in a personal list, without modifying the file system.
+        You can add annotations, ratings, organize them in folders or create a personal list. </p>
+      <button  class="button_download" type="submit" onclick="window.open('SetupFilesRater.msi')" > DOWNLOAD <br>
+      <small style="font-size: 15px"> For Windows </small> </button>
+      <!-- <img class="imgs" alt="click to download" src="download_image.jpg" width=425 height=704  />--> 
+    </div>
+    <div class="right_section">
+      <div class="slideshow-container">
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 3</div>
+          <img src="img_nature_wide.jpg" style="width:100%" >
+          <div class="text">Caption Text</div>
+        </div>
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 3</div>
+          <img src="img_snow_wide.jpg" style="width:100%">
+          <div class="text">Caption Two</div>
+        </div>
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 3</div>
+          <img src="img_mountains_wide.jpg" style="width:100%">
+          <div class="text">Caption Three</div>
+        </div>
+      </div>
+      <br>
+      <div style="text-align:center"> <span class="dot"></span> <span class="dot"></span> <span class="dot"></span> </div>
+    </div>
+  </div>
+</div>
+<div class="tabs" id="features" >
+  <div>
+    <div class="left_section_feature">
+      <p class="content_home">
+        <spam style="color: skyblue">Easy <br>
+        </spam>
+        Full productivity funbctions ,awesomw functions </p>
+    </div>
+    <div class="right_section"> <img src="img_nature_wide.jpg" style="width:100%" > </div>
+  </div>
+  <div>
+    <div class="left_section_feature">
+      <p class="content_home">
+        <spam style="color: skyblue">Easy <br>
+        </spam>
+        Full productivity funbctions ,awesomw functions </p>
+    </div>
+    <div class="right_section"> <img src="img_nature_wide.jpg" style="width:100%" > </div>
+  </div>
+  <div>
+    <div class="left_section_feature">
+      <p class="content_home">
+        <spam style="color: skyblue">Easy <br>
+        </spam>
+        Full productivity funbctions ,awesomw functions </p>
+    </div>
+    <div class="right_section"> <img src="img_nature_wide.jpg" style="width:100%" > </div>
+  </div>
+</div>
+<div class="tabs" id="tutorials" >
+  <h3 class="title" style="color: white"> Key Maps</h3>
+  <button class="accordion">View</button>
+  <div class="panel">
+    <p class="content_help"> [L] : View as list <br>
+      [D] : View default <br>
+    </p>
+  </div>
+  <button class="accordion">Video Player</button>
+  <div class="panel">
+    <p class="content_help"> [L]=View as list <br>
+      [Enter]=Full screen <br>
+      [Left] / [Right] : Reward/Forward 5 seconds <br>
+      [Up] / [Down] : Increase/Decrease Volume <br>
+      [SPACE] : Play / Pause <br>
+      [Z] : Speed Normal <br>
+      [X] : Decrease Speed <br>
+      [J ]:Reward 5 seconds<br>
+      [K] : Pause <br>
+      [L] :Forward 5 seconds <br>
+      [V] : Decrease Volume <br>
+      [B] : Increase Volume <br>
+      [M] : Minimun size video <br>
+      [Mouse Central] / [ESC] / [BACK] : Close <br>
+      [V] : Decrease Volume <br>
+    </p>
+  </div>
+  <button class="accordion">Image Viewer</button>
+  <div class="panel">
+    <p class="content_help"> [Mouse Central] / [ESC] / [BACK] : Close <br>
+      [Left] / [Right] : Previus / Next photo <br>
+      [Down] / [Up] : Zoom in/out <br>
+      [Mouse Wheel] : Zoom in/out <br>
+      [CNTRL]+[Up/Down/Left/Right] = Traslate <br>
+    </p>
+  </div>
+  <button class="accordion">General</button>
+  <div class="panel">
+    <p class="content_help"> [CNTRL] + [C] : Copy <br>
+      [CNTRL] + [X] : Cut <br>
+      [CNTRL] + [V] : Paste element <br>
+      [SUPR] : Delete <br>
+      [Enter / Right] : Execute <br>
+      [Back / Left] :Back <br>
+      [F5] :Refresh <br>
+      [ESC] : Cancel Cut o Copy <br>
+      [Up / Down] : Navigate <br>
+      [CNTRL] + [ENTER] : Open file with internal viever or Click on Thumbnail <br>
+    </p>
+  </div>
+</div>
+<div class="tabs" id="about" >
+  <h3 class="title"> About</h3>
+  <p class="content" id	="textabout"> We are a independent apps developer studio,founded in 2012 to developed PC software.
+    We are focused on bringing full productivity apps , better apps to learning o educational , and great multimedia experencie. 
+    We bringing in our apps a full stack and diferent functions to a great productivity.
+    Follow our newtworks to learn full about apps functions. </p>
+</div>
+<div class="tabs" id="contactid" >
+  <h3 class="title"> Contact </h3>
+  <div class="container">
+    <form action="">
+      <label for="fname" class="items-form" > Name:</label>
+      <input type="text" id="lname" name="lastname" placeholder="Write your name">
+      <label for="femail" class="items-form" > Email:</label>
+      <input type="text" id="lname" name="lastname" placeholder="Write your email">
+      <label for="country" class="items-form">App Name:</label>
+      <select id="country" name="country">
+        <option value="usa">FilesRater Pc</option>
+        <option value="usa">FilesRater App</option>
+        <option value="usa">VidSlax</option>
+        <option value="usa">AudioLibx</option>
+        <option value="usa">TextVoice</option>
+        <option value="usa">IdiomPlay</option>
+        <option value="usa">QueryReps</option>
+      </select>
+      <label for="country" class="items-form">Operating System:</label>
+      <select id="system" name="System">
+        <option value="usa">Windows 10</option>
+        <option value="usa">Windows 11</option>
+        <option value="usa">Windows 8.1</option>
+        <option value="usa">Windows 7</option>
+        <option value="usa">Android 7</option>
+        <option value="usa">Android 8</option>
+        <option value="usa">Android 9</option>
+        <option value="usa">Android 10</option>
+        <option value="usa">Android 11</option>
+      </select>
+      <label for="subject" class="items-form">Message</label>
+      <textarea id="subject" name="subject" placeholder="Write something.." style="height: 200px"></textarea>
+      <input type="submit" value="Submit" align="right">
+    </form>
+  </div>
+  <a id="support"  href="mailto:miky.software@gmail.com"> Email:  miky.software@gmail.com </a> </div>
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+<!--<iframe width="420" height="315"
+src="https://www.youtube.com/embed/tgbNymZ7vqY?controls=0"> </iframe>-->
+<footer id="footer">Copyright © 2022 Miky Software Apps / America </footer>
+<script src="script.js"></script>
+</body>
+</html>
