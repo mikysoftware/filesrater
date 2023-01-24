@@ -1,0 +1,90 @@
+@charset "utf-8";
+/* CSS Document */
+.tab_home:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.left_section {
+    width: 40%;
+    height: auto;
+    float: left;
+    padding: 10px 15px 20px 20px;
+    margin: auto
+}
+.left_section_feature {
+    width: 40%;
+    height: auto;
+    float: left;
+    padding: 10px 15px 20px 20px;
+    margin: auto
+}
+.right_section {
+    width: 55%;
+    height: auto;
+    background-color: #5F5A5A;
+    margin: auto;
+    border: none;
+    border-radius: 30px;
+    display: inline-block;
+    /*padding: 10px 10px 10px 10px;*/
+    margin-top: 15px;
+}
+.content_home {
+    color: aliceblue;
+    font-family: Russo One;
+    font-size: 20px;
+    text-align: left;
+    text-justify: inter-word;
+    padding-left: 5px;
+    padding-right: 5px
+}
+
+.content_feature_title {
+    color: skyblue;
+    font-family: Russo One;
+    font-size: 20px;
+    text-align: left;
+    text-justify: inter-word;
+    padding-left: 5px;
+    padding-right: 5px
+}
+
+.tab_home {
+    width: 100%;
+    height: auto;
+    background-color: #5F5A5A;
+    border: none;
+    border-radius: 10px;
+    margin: auto;
+    text-align: center;
+}
+/* display: inline-block; esto impide que nose centre horizonatalmente*/
+
+/* este no se usa*/
+.imgs_home_right {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: 20px;
+}
+ /*/------------------------------------ */
+.title_help {
+ color: #14A8CD;
+ font-family: Russo One;
+ font-size: 25px;
+ padding-left: 30px;
+ background-color: #413D3D;
+ padding-top: 15px;
+ padding-bottom: 15px;
+}
+.content_help {
+    color: aliceblue;
+    font-family: Russo One;
+    font-size: 20px;
+    text-align: justify;
+    text-justify: inter-word;
+    padding-left: 30px;
+    padding-right: 30px
+}
